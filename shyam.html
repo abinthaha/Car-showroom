@@ -2,9 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maruthi - 800 | Spec</title>
+    <link rel="stylesheet" type="text/css" href="css/syam_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="compiled/flipclock.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="compiled/flipclock.js"></script>
+
 </head>
 <body>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="row logo">
+ 
+     <div class="col-md-4"><img src="img/suzuki.png" width="20%" height="20%" alt=""></div>
+     <div class="col-md-4"><img src="img/regina.gif" width="30%" height="30%"></div> 
+		<div class="col-md-4">
+
+			<ul class="nav nav-tabs navigation">
+			  <li role="presentation" class="" id=""><a href="#">Home</a></li>
+			  <li role="presentation"><a href="#gallary">Gallary</a></li>
+			  <li role="presentation"><a href="#">Features</a></li>
+			  <li role="presentation"><a href="#">Other Models</a></li>
+			</ul>
+
+		</div>
+	</div>
+</nav>
+	<section id="home" class="container-fluid">
+		
+	 </h1>
+	</div>
+	<br><br>
+	
+	<div class="row">
+	</div>
+	<span class="coming"><h1>Registration will open in...</h1></span>
+	<div class="clock container-fluid" style="margin-left:33em;"></div>
+	<div class="message"></div>
+    </section>
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(220880);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script>
+<div id="gallary" class="container-fluid active">
+	 <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Interior</div>
+      <div class="collapsible-body">
+      	
+	    <div class="slider">
+		    <ul class="slides">
+		      <li>
+		        <img src="img/int1.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3><font color="orange"></font></h3>
+		          
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/int2.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>Drive like a legend.</h3>
+		          <h5 class="light grey-text text-lighten-3">Nothing will be great</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/int3.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3>The Blue Moon</h3>
+		          <h5 class="light grey-text text-lighten-3">It's all </h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/int4.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>This is our big Tagline!</h3>
+		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		        </div>
+		      </li>
+		    </ul>
+	 	</div>
+
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Wheels</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Engine</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+   <!--
+     <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/regina.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   
+    <div class="parallax-container">
+    <div class="parallax"><img src="img/bmw.jpg"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="img/slide 2.jpg"></div>
+  </div>
+       -->
+       
+      <script type="text/javascript">
+       $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+      
+</script
+</div>
 </body>
 </html>
