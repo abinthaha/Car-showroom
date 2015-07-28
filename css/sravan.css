@@ -1,0 +1,16 @@
+#page-header{
+    z-index: 3;
+    background-color: black;
+}
+
+.navigation-btn{
+    background-color: transparent;
+    color: crimson;
+    padding: 8px;
+    font-size: 40px;
+}
+
+.page-logo{
+    margin: 10px;
+    height: 50px;
+}
