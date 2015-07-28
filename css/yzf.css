@@ -1,0 +1,49 @@
+.div_header
+{
+	position: relative;
+}
+.header_tab
+{
+	background-color: #C0C0C0;
+	border-radius: 5px;
+}
+.head_tab
+{
+	width: 100px; 
+	text-align:center; 
+	font-size:10px;
+	font-weight: bold;
+}
+.body_tab
+{
+	text-align: center;
+	vertical-align: text-bottom;
+	font-family: Century Schoolbook L, Bold;
+	font-size: 10px;
+	color: white;
+}
+.img_crop
+{
+    background-position: -100px -100px;
+    width: 800px;
+    clip: rect(100px,0,100px,0);
+
+}
+.sample
+{
+    width:1300px;
+    height:600px;
+    overflow:hidden;
+    position: relative;
+    border: 1px solid black;
+}
+.sample_img {
+    position: absolute;
+    top: -200px;
+    left: 0px;
+}
+.drop
+{
+  display: inline;
+  font-size: 15px;
+}
