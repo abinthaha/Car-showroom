@@ -12,7 +12,7 @@
 
 }
 body{
-	background-image: url("../img/bmw.jpg");
+	background-image: url("../img/bmw2.jpg");
 	
 	background-size: 100% ;
     background-repeat: no-repeat;
@@ -54,7 +54,86 @@ height: 100%;
 	
 }
 #gallary{
-	background-color: white;
+	background-color: black;
+	padding-top: 4.5%;
+	border-left: 0;
+
+}
+.quick{
+	font-size: 200%;
+}
+.button-floating, .button-large {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  padding: 0;
+  background-color: transparent;
+  border-color: blue;
+  border:1px solid white;
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+  vertical-align: middle; }
+  .hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+}
+.bmw{
+	width: 100%;
+}
+a:hover{
+	text-decoration: blink;
+}
+.nav-tab {
+  border-bottom: none;
+}
+.nav-tab > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-tab > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tab > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+.nav-tab > li.active > a,
+.nav-tab > li.active > a:hover,
+.nav-tab > li.active > a:focus {
+  color: red;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+.navigation{
+	color: #43126f;
+
+}
+#features{
 	height: 100%;
-	padding-top: 5%;
+	padding-top: 4.5%;
+
 }
