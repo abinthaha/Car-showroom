@@ -2,9 +2,356 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMW Regina | Spec</title>
+    <link rel="stylesheet" type="text/css" href="css/syam_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="compiled/flipclock.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="compiled/flipclock.js"></script>
+
 </head>
 <body>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="row logo">
+ 
+     <div class="col-md-4"><img src="img/bmwlogo.png" width="20%" height="20%" alt=""></div>
+     <div class="col-md-4"><img src="img/regina.gif" width="30%" height="30%"></div> 
+		<div class="col-md-4">
+
+			<ul class="nav nav-tab">
+			  <li role="presentation" class="" id=""><a class="navigation" href="#">Home</a></li>
+			  <li role="presentation"><a class="navigation" href="#gallary">Gallary</a></li>
+			  <li role="presentation"><a class="navigation" href="#features">Features</a></li>
+			  <li role="presentation"><a class="navigation" href="#">Other Models</a></li>
+			</ul>
+
+		</div>
+	</div>
+</nav>
+	<section id="home" class="container-fluid">
+		
+	 </h1>
+	</div>
+	
+	<div class="row">
+	</div>
+	<img src="img/comingsoon1.png" width="20%">
+	<br>
+	<div class="clock container-fluid" style="margin-left:30em;"></div>
+	<div class="message"></div>
+	<br><br><br><br><br><br>
+	  <!-- Modal Trigger -->
+   
+  <div class="hvr-grow bmw row"><a class="button modal-trigger  hvr-grow" href="#modal1"><img src="img/bmwlogo.png" width="5%"></a>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>BMW Regina i-8</h4>
+      <img src="img/i81.jpg" width="30%">
+      <img src="img/i82.jpg" width="30%">
+      <img src="img/i84.jpg" width="30%">
+
+      <h5>Specification</h5>
+      <div class="row">
+      <div class="col-md-6">
+       <ul class="collection">
+    <li class="collection-item avatar">
+      <i class="material-icons circle">explicit</i>
+      <span class="title">1899 cc</span>
+      <p>Engine</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">done</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">av_timer</i>
+      <span class="title">18 kmpl</span>
+      <p>Milage</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">done</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">swap_vert</i>
+      <span class="title">117 mm</span>
+      <p>Ground Clearence</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">done</i></a>
+    </li>
+    </ul>
+    </div>
+
+    <div class="col-md-6">
+       <ul class="collection">
+    <li class="collection-item avatar">
+      <i class="material-icons circle">explicit</i>
+      <span class="title">Present</span>
+      <p>ABS</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">done</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">bluetooth</i>
+      <span class="title">Present</span>
+      <p>Bluetooth</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">done</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">swap_vert</i>
+      <span class="title">Present</span>
+      <p>Air bags</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">done</i></a>
+    </li>
+    </ul>
+    </div>
+
+    </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-close btn-flat ">Close</a>
+    </div>
+  </div>
+    </section>
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(220880);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+        </script>
+<div id="gallary" class="container-fluid active">
+
+	 <ul class="collapsible" data-collapsible="accordion">
+	 <li class="active">
+      <div class="collapsible-header"><i class="material-icons">visibility</i>First Look</div>
+      <div class="collapsible-body">
+      	
+      	<div class="slider">
+		    <ul class="slides">
+		      <li>
+		        <img src="img/i88.jpg" height="25%"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3><font color="#fc1243">Feel the magic</font></h3>
+		          <h5 class="light grey-text text-lighten-3">It's all about the beauty..</h5>
+		          
+		          
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/i89.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3>Unleashed power</h3>
+		         
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/i87.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>Legacy</h3>
+		          <h5 class="light grey-text text-lighten-3">We buit with your mind.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/i86.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          
+		        </div>
+		      </li>
+		    </ul>
+	 	</div>
+
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Interior</div>
+      <div class="collapsible-body">
+      	
+	    <div class="slider">
+		    <ul class="slides">
+		      <li>
+		        <img src="img/int1.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3><font color="orange"></font></h3>
+		          
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/int2.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>Drive like a legend.</h3>
+		          <h5 class="light grey-text text-lighten-3">Nothing will be great</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/int3.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3>The Blue Moon</h3>
+		          <h5 class="light grey-text text-lighten-3">It's all about the beauty..</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/int4.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>Let's start the ride.</h3>
+		          <h5 class="light grey-text text-lighten-3">it's insane.</h5>
+		        </div>
+		      </li>
+		    </ul>
+	 	</div>
+
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Wheels</div>
+      <div class="collapsible-body">
+      	
+      	<div class="slider">
+		    <ul class="slides">
+		      <li>
+		        <img src="img/wheel1.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3>Name comes to a Brand.</h3>
+		          <h5 class="light grey-text text-lighten-3">Nothing will be great</h5>
+		          
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/wheel2.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>Drive like a legend.</h3>
+		          <h5 class="light grey-text text-lighten-3">Nothing will be great</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/wheel3.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3>The Blue Moon</h3>
+		          <h5 class="light grey-text text-lighten-3">It's all about the beauty..</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/wheel4.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>Let's start the ride.</h3>
+		          <h5 class="light grey-text text-lighten-3">it's insane.</h5>
+		        </div>
+		      </li>
+		    </ul>
+	 	</div>
+
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Engine</div>
+      <div class="collapsible-body">
+      	
+      	<div class="slider">
+		    <ul class="slides">
+		      <li>
+		        <img src="img/eng4.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3>5000cc</h3>
+		          
+		          
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/eng1.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>789 bhp</h3>
+		         
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/eng2.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3>7482 rpm</h3>
+		          <h5 class="light grey-text text-lighten-3">It's all about the beauty..</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/eng3.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          
+		        </div>
+		      </li>
+		    </ul>
+	 	</div>
+
+      </div>
+    </li>
+  </ul>
+    <video width="100%dw" height="100%dh" autoplay loop>
+	  <source src="bmw.mp4" type="video/mp4">
+	  <source src="bmw.ogg" type="video/ogg">
+	</video>
+   <!--
+     <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/regina.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   
+    <div class="parallax-container">
+    <div class="parallax"><img src="img/bmw.jpg"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="img/slide 2.jpg"></div>
+  </div>
+       -->
+       
+      <script type="text/javascript">
+       $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+      
+</script>
+</div>
+
+	<div id="features">
+
+enthallaaaaaaaaaaaadgdfogbdfoihsbn                     fhnbkvcccbl;db noicnbb ,vmzp[fjefx,b.xcv']
+		
+	</div>
 </body>
 </html>
