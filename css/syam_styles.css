@@ -1,7 +1,7 @@
 #home
 {
 	text-align: center;
-	
+
 	margin-top: 0;
 	border-radius: 0;
 	font-size: 125%;
@@ -13,7 +13,7 @@
 }
 body{
 	background-image: url("../img/bmw2.jpg");
-	
+
 	background-size: 100% ;
     background-repeat: no-repeat;
 }
@@ -51,7 +51,7 @@ height: 100%;
 	border-style: none;
 	position: fixed;
 	width: 100vw;
-	
+
 }
 #gallary{
 	background-color: black;
@@ -99,6 +99,9 @@ height: 100%;
 }
 .bmw{
 	width: 100%;
+	border: none;
+	border-style: none;
+	border-color: none;
 }
 a:hover{
 	text-decoration: blink;
@@ -135,5 +138,14 @@ a:hover{
 #features{
 	height: 100%;
 	padding-top: 4.5%;
+	background-color: white;
+	padding-left: 2%;
 
+}
+h2>strong{
+	border-bottom-color: #CACACA;
+	border-bottom-style: solid;
+}
+.footer{
+	background-color: black;
 }
